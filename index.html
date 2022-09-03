@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopify</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "480px",
+            md: "750px",
+            slg: "850px",
+            lg: "1080px",
+            xl: "1440px",
+          },
+          extend: {
+            colors: {
+              sandal: "#fbf7ed",
+              darkGreenBg: "#008060",
+              darkGreenFont: "#004c3f",
+              grey: "#42474c",
+              greySecondary: "#6b7177",
+              white: "#ffffff",
+              footerColor: "#b6babf",
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body>
+    <div class="max-w-[1600px] mx-auto">
+      <!-- navbar -->
+      <nav
+        class="flex items-center justify-between py-5 px-[calc(5%+4px)] md:px-[calc(5%+9px)] lg:px-[calc(5%+18px)] sticky top-0 bg-sandal flex-wrap"
+      >
+        <div class="left-container flex items-center gap-[30px]">
+          <div class="logo w-[121px]">
+            <img src="./resources/shopify_logo.svg" alt="" />
+          </div>
+          <ul
+            class="left-menu hidden lg:flex lg:text-[15px] lg:leading[80px] lg:font-medium gap-[30px]"
+          >
+            <li>Start</li>
+            <li>Sell</li>
+            <li>Market</li>
+            <li>Manage</li>
+          </ul>
+        </div>
+        <div class="right-container">
+          <ul
+            class="hidden lg:flex lg:items-center lg:text-[15px] lg:leading[80px] lg:font-medium gap-[30px]"
+          >
+            <li>Pricing</li>
+            <li>Learn</li>
+            <li>Log in</li>
+            <li>
+              <button
+                class="text-white text-[16px] bg-darkGreenBg px-[19px] py-[12px] rounded"
+              >
+                Start free trial
+              </button>
+            </li>
+          </ul>
+          <ul
+            class="lg:hidden flex items-center text-[17px] leading[80px] font-medium gap-[30px]"
+          >
+            <li class="">Log in</li>
+            <li class="w-[17px]">
+              <img src="./resources/hamburger.png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- hero-section -->
+      <section
+        class="bg-sandal py-[32px] md:py-[48px] px-[calc(5%+4px)] md:px-[calc(5%+9px)] lg:px-[calc(5%+18px)] flex flex-col md:items-start lg:items-center items-center lg:flex-row justify-between"
+      >
+        <div
+          class="left md:w-[83.33%] lg:w-[33.33%] flex flex-col gap-[24px] mb-[32px] md:mb-[0px]"
+        >
+          <h1
+            class="text-[32px] leading-[44px] text-darkGreenFont lg:text-[48px] lg:leading-[66px] font-bold"
+          >
+            If you can dream it, you can sell it with Shopify
+          </h1>
+          <p
+            class="font-normal text-[18px] text-greySecondary leading-[24px] lg:text-[20px] lg:leading-[26.6px]"
+          >
+            Millions of the world's most successful brands trust Shopify to
+            sell, ship and process payments anywhere.
+          </p>
+          <div class="trial flex flex-wrap gap-[5px]">
+            <input
+              class="bg-white appearance-none border border-black rounded min-w-[251px] px-[19px] py-[12px] text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-darkGreenBg grow-[2]"
+              id="inline-full-name"
+              type="text"
+              placeholder="Enter your email address"
+            />
+            <button
+              class="text-white text-[16px] bg-darkGreenBg px-[19px] py-[12px] leading[80px] font-medium rounded grow"
+            >
+              Start free trial
+            </button>
+          </div>
+
+          <p class="text-[12px] font-normal leading-[18px] text-grey mb-[16px]">
+            Try Shopify free for 14 days, no credit card required. By entering
+            your email, you agree to receive marketing emails from Shopify.
+          </p>
+        </div>
+        <div class="right lg:w-[58.33%]">
+          <div class="">
+            <img src="./resources/hero-image.webp" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- business -->
+      <section
+        class="px-[calc(5%+4px)] md:px-[calc(5%+9px)] lg:px-[calc(5%+18px)] bg-darkGreenFont py-[64px] md:py-[96px]"
+      >
+        <h2
+          class="text-[28px] leading-[34px] font-normal text-white mb-[12px] lg:text-[40px] lg:leading-[48px]"
+        >
+          Bring your business online
+        </h2>
+        <div
+          class="flex justify-between text-white xl:flex-row flex-col mb-[60px]"
+        >
+          <p class="font-normal text-[16px] leading-[24px] mb-[16px]">
+            Create an ecommerce website backed by powerful tools that help you
+            find customers, drive sales, and manage your day-to-day.
+          </p>
+          <p class="text-[16px] font-bold leading-[24px]">
+            Explore more examples
+          </p>
+        </div>
+        <div
+          class="grid xl:grid-cols-5 lg:grid-cols-4 slg:grid-cols-3 grid-cols-2 gap-x-[16px] gap-y-[45px] pb-[48px]"
+        >
+          <div class="flex flex-col gap-[12px]">
+            <img src="./resources/business-1.webp" alt="" />
+            <p class="text-[14px] leading-[16px] font-semibold text-white">
+              FOOD & DRINK
+            </p>
+            <p class="text-white text-[16px] lg:text-[18px]">Alfred</p>
+          </div>
+          <div class="flex flex-col gap-[12px]">
+            <img src="./resources/business-2.webp" alt="" />
+            <p class="text-[14px] leading-[16px] font-semibold text-white">
+              FOOD & DRINK
+            </p>
+            <p class="text-white text-[16px] lg:text-[18px]">Alfred</p>
+          </div>
+          <div class="flex flex-col gap-[12px]">
+            <img src="./resources/business-3.webp" alt="" />
+            <p class="text-[14px] leading-[16px] font-semibold text-white">
+              FOOD & DRINK
+            </p>
+            <p class="text-white text-[16px] lg:text-[18px]">Alfred</p>
+          </div>
+          <div class="flex flex-col gap-[12px]">
+            <img src="./resources/business-4.webp" alt="" />
+            <p class="text-[14px] leading-[16px] font-semibold text-white">
+              FOOD & DRINK
+            </p>
+            <p class="text-white text-[16px] lg:text-[18px]">Alfred</p>
+          </div>
+          <div class="hidden md:block md:flex md:flex-col md:gap-[12px]">
+            <img src="./resources/business-5.webp" alt="" />
+            <p class="text-[14px] leading-[16px] font-semibold text-white">
+              FOOD & DRINK
+            </p>
+            <p class="text-white text-[16px] lg:text-[18px]">Alfred</p>
+          </div>
+        </div>
+        <h2
+          class="font-normal text-white text-[24px] leading-[32px] md:text-[30px] md:leading-[40px] pt-[48px] mb-[60px]"
+        >
+          Take the best path forward
+        </h2>
+        <div
+          class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-[36px] gap-y-[45px]"
+        >
+          <div class="flex flex-col gap-[16px]">
+            <div><img src="./resources/order.svg" alt="" /></div>
+            <p
+              class="text-[16px] leading-[21.33px md:text-[18px] md:leading-[24px] text-white font-medium"
+            >
+              Start an online business
+            </p>
+            <p class="text-[16px] leading-[24px] text-white font-normal">
+              Create a business, whether you’ve got a fresh idea or are looking
+              for a new way to make money.
+            </p>
+          </div>
+          <div class="flex flex-col gap-[16px]">
+            <div><img src="./resources/online-shop.svg" alt="" /></div>
+            <p
+              class="text-[16px] leading-[21.33px md:text-[18px] md:leading-[24px] text-white font-medium"
+            >
+              Start an online business
+            </p>
+            <p class="text-[16px] leading-[24px] text-white font-normal">
+              Create a business, whether you’ve got a fresh idea or are looking
+              for a new way to make money.
+            </p>
+          </div>
+          <div class="flex flex-col gap-[16px]">
+            <div><img src="./resources/home.svg" alt="" /></div>
+            <p
+              class="text-[16px] leading-[21.33px md:text-[18px] md:leading-[24px] text-white font-medium"
+            >
+              Start an online business
+            </p>
+            <p class="text-[16px] leading-[24px] text-white font-normal">
+              Create a business, whether you’ve got a fresh idea or are looking
+              for a new way to make money.
+            </p>
+          </div>
+          <div class="flex flex-col gap-[16px]">
+            <div><img src="./resources/award.svg" alt="" /></div>
+            <p
+              class="text-[16px] leading-[21.33px md:text-[18px] md:leading-[24px] text-white font-medium"
+            >
+              Start an online business
+            </p>
+            <p class="text-[16px] leading-[24px] text-white font-normal">
+              Create a business, whether you’ve got a fresh idea or are looking
+              for a new way to make money.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Features -->
+      <section
+        class="px-[calc(5%+4px)] md:px-[calc(5%+9px)] lg:px-[calc(5%+18px)] py-[64px]"
+      >
+        <div class="mb-[50px]">
+          <h1
+            class="text-[28px] text-[#212326] leading-[34px] font-normal md:text-[40px] md:leading[48.5px] mb-[20px] md:mb-[12px] text-center"
+          >
+            With you wherever you’re going
+          </h1>
+          <p
+            class="text-[18px] text-greySecondary leading-[27px] font-normal md:text-[20px] md:leading-[30px] text-center max-w-[48ch] mb-[18px] md:mb-[20px] mx-auto"
+          >
+            One platform with all the ecommerce and point of sale features you
+            need to start, run, and grow your business.
+          </p>
+        </div>
+        <div>
+          <div
+            class="flex flex-col-reverse lg:flex-row items-center gap-[20px] max-w-[1215px] mx-auto"
+          >
+            <div class="left-container pb-[40px] lg:pb-[0px]">
+              <div><img src="./resources/features-1.png" alt="" /></div>
+            </div>
+            <div
+              class="right-container flex flex-col gap-[20px] max-w-[570px] md:pr-[96px] md:ml-[90px] pt-[40px]"
+            >
+              <h2
+                class="text-[24px] leading-[32px] text-[#212326] md:text-[30px] md:leading-[40px] font-medium"
+              >
+                Sell everywhere
+              </h2>
+              <p
+                class="text-greySecondary text-[16px] leading-[24px] font-normal"
+              >
+                Use one platform to sell products to anyone, anywhere—in person
+                with Point of Sale and online through your website, social
+                media, and online marketplaces.
+              </p>
+              <a
+                href="#"
+                class="text-darkGreenBg text-[16px] font-bold leading-[24px] md:text-[18px] leading-[27px]"
+                >Explore ways to sell
+              </a>
+            </div>
+          </div>
+          <div
+            class="flex flex-col lg:flex-row items-center gap-[20px] max-w-[1215px] mx-auto"
+          >
+            <div
+              class="right-container flex flex-col gap-[20px] max-w-[570px] md:pr-[96px] md:ml-[90px] pt-[40px]"
+            >
+              <h2
+                class="text-[24px] leading-[32px] text-[#212326] md:text-[30px] md:leading-[40px] font-medium"
+              >
+                Market your business
+              </h2>
+              <p
+                class="text-greySecondary text-[16px] leading-[24px] font-normal"
+              >
+                Take the guesswork out of marketing with built-in tools that
+                help you create, execute, and analyze digital marketing
+                campaigns.
+              </p>
+              <a
+                href="#"
+                class="text-darkGreenBg text-[16px] font-bold leading-[24px] md:text-[18px] leading-[27px]"
+                >Explore how to market your business
+              </a>
+            </div>
+            <div class="left-container pb-[40px] lg:pb-[0px]">
+              <div><img src="./resources/feature-2.webp" alt="" /></div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col-reverse lg:flex-row items-center gap-[20px] max-w-[1215px] mx-auto"
+          >
+            <div class="left-container pb-[40px] lg:pb-[0px]">
+              <div><img src="./resources/features-3.png" alt="" /></div>
+            </div>
+            <div
+              class="right-container flex flex-col gap-[20px] max-w-[570px] md:pr-[96px] md:ml-[90px] pt-[40px]"
+            >
+              <h2
+                class="text-[24px] leading-[32px] text-[#212326] md:text-[30px] md:leading-[40px] font-medium"
+              >
+                Manage everything
+              </h2>
+              <p
+                class="text-greySecondary text-[16px] leading-[24px] font-normal"
+              >
+                Gain the insights you need to grow—use a single dashboard to
+                manage orders, shipping, and payments anywhere you go.
+              </p>
+              <a
+                href="#"
+                class="text-darkGreenBg text-[16px] font-bold leading-[24px] md:text-[18px] leading-[27px]"
+                >Explore how to manage your business
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials -->
+      <section
+        class="px-[calc(5%+4px)] md:px-[calc(5%+9px)] lg:px-[calc(5%+18px)] py-[64px] md:py-[96px]"
+      >
+        <section class="flex flex-col md:flex-row">
+          <div class="left-container md:w-[50%]">
+            <div class="h-[100%]">
+              <img
+                src="./resources/testimonials.jpg"
+                class="object-cover h-full"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="right-container bg-[#002e25] py-[40px] px-[32px] md:w-[50%] flex flex-col items-center justify-between gap-[35px]"
+          >
+            <div class="md:w-[75%]">
+              <h1
+                class="text-white text-[20px] font-medium leading-[30px] lg:text-[30px] lg:leading-[45px] text-center"
+              >
+                “We’ve been able to build something in 3 years that a lot of
+                brands haven’t actually gotten to in 10 years.”
+              </h1>
+            </div>
+            <div class="w-[146px]">
+              <img src="./resources/logo-1.avif" alt="" />
+            </div>
+            <div>
+              <h2
+                class="text-white text-[15px] leading-[22.5px] lg:text-[20px] lg:leading-[30px] font-medium"
+              >
+                Chioma | Cee Cee’s Closet NYC
+              </h2>
+            </div>
+            <div class="text-white">
+              <button
+                class="border rounded px-[30px] py-[10px] text-[14px] shading-[15.8px] lg:text-[16px] lg:shading-[18.128px]"
+              >
+                Play Chioma and Uchenna's story
+              </button>
+            </div>
+          </div>
+        </section>
+        <div class="flex justify-evenly items-center flex-wrap mt-[64px]">
+          <div class="w-[25%] md:w-[15%] lg:w-[90.9px] mx-[16px] mb-[32px]">
+            <img src="./resources/comp-1.webp" alt="" />
+          </div>
+          <div class="w-[25%] md:w-[15%] lg:w-[90.9px] mx-[16px] mb-[32px]">
+            <img src="./resources/comp-2.webp" alt="" />
+          </div>
+          <div class="w-[25%] md:w-[15%] lg:w-[90.9px] mx-[16px] mb-[32px]">
+            <img src="./resources/comp-3.webp" alt="" />
+          </div>
+          <div class="w-[25%] md:w-[15%] lg:w-[90.9px] mx-[16px] mb-[32px]">
+            <img src="./resources/comp-4.webp" alt="" />
+          </div>
+          <div class="w-[25%] md:w-[15%] lg:w-[90.9px] mx-[16px] mb-[32px]">
+            <img src="./resources/comp-5.webp" alt="" />
+          </div>
+          <div class="w-[25%] md:w-[15%] lg:w-[90.9px] mx-[16px] mb-[32px]">
+            <img src="./resources/comp-6.webp" alt="" />
+          </div>
+          <div class="w-[25%] md:w-[15%] lg:w-[90.9px] mx-[16px] mb-[32px]">
+            <img src="./resources/comp-7.webp" alt="" />
+          </div>
+          <div class="w-[25%] md:w-[15%] lg:w-[90.9px] mx-[16px] mb-[32px]">
+            <img src="./resources/comp-8.webp" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- support -->
+      <section
+        class="md:pl-[calc(5%+9px)] lg:pl-[calc(5%+18px)] flex flex-col md:flex-row bg-sandal"
+      >
+        <div
+          class="pl-[calc(5%+4px)] md:pl-[0] left-container pt-[64px] md:pt-[80px] md:w-[66.66%] lg:w-[50%] pr-[32px]"
+        >
+          <div class="max-w-[318px] md:max-w-[439px] mb-[60px]">
+            <h1
+              class="text-[28px] leading-[34px] md:text-[40px] md:leading-[48.5px] font-normal"
+            >
+              Get the help you need, every step of the way
+            </h1>
+          </div>
+          <div class="flex items-center flex-wrap">
+            <div class="md:w-[50%] flex flex-col gap-[16px] mb-[45px]">
+              <h2
+                class="font-medium text-[16px] leading-[21.33px] md:text-[18px] md:leading-[24px]"
+              >
+                Shopify support
+              </h2>
+              <p
+                class="text-greySecondary font-normal md:text-[16px] md:leading-[24px]"
+              >
+                Contact support 24/7, whether you’re troubleshooting issues or
+                looking for business advice.
+              </p>
+              <a
+                class="text-darkGreenBg font-bold text-size[16px] leading-[24px]"
+                href=""
+                >Contact support</a
+              >
+            </div>
+            <div class="md:w-[50%] flex flex-col gap-[16px] mb-[45px]">
+              <h2
+                class="font-medium text-[16px] leading-[21.33px] md:text-[18px] md:leading-[24px]"
+              >
+                Shopify App Store
+              </h2>
+              <p
+                class="text-greySecondary font-normal md:text-[16px] md:leading-[24px]"
+              >
+                Add features and functionality to your business with 6,000+ apps
+                that integrate directly with Shopify.
+              </p>
+              <a
+                class="text-darkGreenBg font-bold text-size[16px] leading-[24px]"
+                href=""
+                >Visit the Shopify App Store
+              </a>
+            </div>
+            <div class="md:w-[50%] flex flex-col gap-[16px] mb-[45px]">
+              <h2
+                class="font-medium text-[16px] leading-[21.33px] md:text-[18px] md:leading-[24px]"
+              >
+                Shopify Experts Marketplace
+              </h2>
+              <p
+                class="text-greySecondary font-normal md:text-[16px] md:leading-[24px]"
+              >
+                Hire a Shopify expert to help you with everything from store
+                setup to SEO.
+              </p>
+              <a
+                class="text-darkGreenBg font-bold text-size[16px] leading-[24px]"
+                href=""
+                >Explore the Shopify Experts Marketplace
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="right-container md:w-[33.33%] lg:w-[50%] pl-[-calc(5%+4px)] max-h-[666px]"
+        >
+          <img
+            src="./resources/support.webp"
+            class="object-cover h-full w-full"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- Free Trial -->
+      <section
+        class="px-[calc(5%+4px)] md:px-[calc(5%+9px)] lg:px-[calc(5%+18px)]"
+      >
+        <div
+          class="py-[64px] md:py-[96px] max-w-[820px] mx-auto flex flex-col items-center gap-[20px]"
+        >
+          <h1
+            class="text-[#212326] font-normal text-[24px] leading-[32px] md:text-[30px] md:leading-[40px] text-center"
+          >
+            Start your business journey with Shopify
+          </h1>
+          <p
+            class="text-center text-[16px] leading-[21.33px] md:text-[18px] font-normal md:leading-[24px] text-greySecondary"
+          >
+            Try Shopify for free, and explore all the tools and services you
+            need to start, run, and grow your business.
+          </p>
+          <button
+            class="text-white text-[16px] bg-darkGreenBg px-[19px] py-[12px] leading[80px] font-medium rounded"
+          >
+            Start free trial
+          </button>
+        </div>
+        <div class="text-center md:text-right mb-[32px]">
+          <a
+            href=""
+            class="text-darkGreenBg text-[18px] font-bold leading-[27px]"
+            >Back to top</a
+          >
+        </div>
+      </section>
+      <!-- Footer -->
+
+      <section class="bg-[#002e25]">
+        <section class="px-[5%] md:px-[80px] pb-[25px] flow-root">
+          <div>
+            <ul
+              class="text-white text-[16px] font-bold leading-[24px] md:leading-[70px] py-[25px] md:py-[0px] flex flex-wrap gap-[16px] justify-center md:justify-start border-b-[2px] border-[#d2d5d91a] mb-[25px]"
+            >
+              <li
+                class="hover:border-b hover:border-white border-b border-transparent"
+              >
+                About
+              </li>
+              <li
+                class="hover:border-b hover:border-white border-b border-transparent"
+              >
+                Careers
+              </li>
+              <li
+                class="hover:border-b hover:border-white border-b border-transparent"
+              >
+                Press and Media
+              </li>
+              <li
+                class="hover:border-b hover:border-white border-b border-transparent"
+              >
+                Shopify Plus
+              </li>
+              <li
+                class="hover:border-b hover:border-white border-b border-transparent"
+              >
+                Sitemap
+              </li>
+            </ul>
+
+            <div class="w-[50%] float-left">
+              <h3
+                class="flex gap-[10.5px] flex-row font-bold text-[14px] leading-[16px] text-white mb-[10px]"
+              >
+                ONLINE STORE
+              </h3>
+              <ul class="md:columns-3">
+                <ul class="flex flex-col gap-[10.5px] mb-[10.5px]">
+                  <li
+                    class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                  >
+                    Sell online
+                  </li>
+                  <li
+                    class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                  >
+                    Features
+                  </li>
+                  <li
+                    class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                  >
+                    Examples
+                  </li>
+                  <li
+                    class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                  >
+                    Website builder
+                  </li>
+                  <li
+                    class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                  >
+                    Online retail
+                  </li>
+                </ul>
+                <ul class="flex flex-col gap-[10.5px] mb-[10.5px]">
+                  <li
+                    class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                  >
+                    Ecommerce website
+                  </li>
+                  <li
+                    class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                  >
+                    Domain names
+                  </li>
+                  <li
+                    class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                  >
+                    Themes
+                  </li>
+                  <li
+                    class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                  >
+                    Shopping cart
+                  </li>
+                  <li
+                    class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                  >
+                    Ecommerce hosting
+                  </li>
+                </ul>
+                <ul class="flex flex-col gap-[10.5px]">
+                  <li
+                    class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                  >
+                    Mobile commerce
+                  </li>
+                  <li
+                    class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                  >
+                    Ecommerce Software
+                  </li>
+                  <li
+                    class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                  >
+                    Online store builder
+                  </li>
+                  <li
+                    class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                  >
+                    Dropshiping Business
+                  </li>
+                  <li
+                    class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                  >
+                    Store themes
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <div class="w-[50%] md:w-[16.66%] float-left">
+              <ul
+                class="flex gap-[10.5px] flex-col gap-[10.5px]w font-bold text-[14px] leading-[16px] text-white mb-[10px]"
+              >
+                POINT OF SALE
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Point of sale
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Features
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Hardware
+                </li>
+              </ul>
+            </div>
+            <div class="w-[50%] md:w-[16.66%] float-left mt-[32px] md:mt-[0px]">
+              <ul
+                class="flex gap-[10.5px] flex-col gap-[10.5px] font-bold text-[14px] leading-[16px] text-white mb-[10px]"
+              >
+                SUPPORT
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  24/7 support
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Shopify Help Center
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Shopify Community
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  API documentation
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Free tools
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Free stock photos
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Website for sale
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Logo Maker
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Business name generator
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Research
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Legal
+                </li>
+              </ul>
+            </div>
+            <div class="md:w-[16.66%] float-left mt-[32px] md:mt-[0px]">
+              <ul
+                class="flex gap-[10.5px] flex-col gap-[10.5px] font-bold text-[14px] leading-[16px] text-white mb-[10px]"
+              >
+                SHOPIFY
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Contact
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Partner program
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Affilliate program
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  App developers
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Investors
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Investors
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Blog topics
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Community Events
+                </li>
+                <li
+                  class="font-normal text-[#b6babf] text-[14px] leading-[21px]"
+                >
+                  Business Encyclopedia
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="border-t-[2px] border-[#d2d5d91a]">
+          <div
+            class="px-[5%] md:px-[80px] py-[32px] flex flex-col md:flex-row justify-between items-center gap-y-[8px]"
+          >
+            <div class="left flex gap-x-[16px]">
+              <div>
+                <img src="./resources/fb.svg" alt="" />
+              </div>
+              <div>
+                <img src="./resources/twitter.svg" alt="" />
+              </div>
+              <div>
+                <img src="./resources/youtube.svg" alt="" />
+              </div>
+              <div>
+                <img src="./resources/instagram.svg" alt="" />
+              </div>
+              <div>
+                <img src="./resources/linkedin.svg" alt="" />
+              </div>
+              <div>
+                <img src="./resources/pintrest.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="right flex items-center font-normal text-[#b6babf] text-[16px] leading-[24px] gap-x-[16px]"
+            >
+              <p>Terms of Service</p>
+              <p>Privacy Policy</p>
+              <p
+                class="right flex items-center font-normal text-[#ffffff] text-[16px] leading-[32px] gap-x-[4px]"
+              >
+                <span
+                  ><img src="./resources/earth-grid-symbol.svg" alt=""
+                /></span>
+                USA
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>
